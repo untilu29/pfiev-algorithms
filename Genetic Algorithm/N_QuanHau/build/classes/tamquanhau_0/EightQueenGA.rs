@@ -1,2 +1,0 @@
-tamquanhau_0.Individuo
-tamquanhau_0.EightQueenGA
