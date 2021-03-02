@@ -7,10 +7,6 @@ package TamQuanHau;
 import java.util.ArrayList;
 import java.util.Random;
 
-/**
- *
- * @author DINHTUAN
- */
 public class Solution {
 
     private ArrayList<StateQueens> listStateQueens;

@@ -6,7 +6,6 @@
 package TamQuanHau;
 
 /**
- *
  * @author DINHTUAN
  */
 public class Main {

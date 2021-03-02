@@ -19,17 +19,16 @@ public class TowerOfHanoi {
         int n = 5;
         processHanoi(n, 1, 3);
     }
-    
-    public static void processHanoi(int numDisk, int fromPeg, int toPeg){
+
+    public static void processHanoi(int numDisk, int fromPeg, int toPeg) {
         int otherPeg;
-        if (numDisk==1){
-            System.out.println("Move the disk from "+fromPeg+" ---> "+toPeg);
-        }
-        else{
-            otherPeg=6-fromPeg-toPeg; /// Chỉ số cột tổng là 6 thì cột còn lại là 6 trừ ra
-            processHanoi(numDisk-1, fromPeg, otherPeg);   
+        if (numDisk == 1) {
+            System.out.println("Move the disk from " + fromPeg + " ---> " + toPeg);
+        } else {
+            otherPeg = 6 - fromPeg - toPeg; /// Chỉ số cột tổng là 6 thì cột còn lại là 6 trừ ra
+            processHanoi(numDisk - 1, fromPeg, otherPeg);
             processHanoi(1, fromPeg, toPeg);
-            processHanoi(numDisk-1,otherPeg,toPeg);
+            processHanoi(numDisk - 1, otherPeg, toPeg);
         }
     }
 }

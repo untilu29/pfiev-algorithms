@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.Random;
 
 /**
- *
  * @author MyPC
  */
 public class CardProblem {
@@ -19,7 +18,7 @@ public class CardProblem {
     int N = 1000;
     int[] f = new int[N];
     int[] cathe;
-    List<int[]> quanthe = new LinkedList<int[]>();
+    List<int[]> quanthe = new LinkedList<>();
     Random rd = new Random();
 
     public CardProblem() {
@@ -55,7 +54,7 @@ public class CardProblem {
                     tich *= j;
                 }
             }
-            f[i] = Math.abs(tong - 36) + 360/tich;
+            f[i] = Math.abs(tong - 36) + 360 / tich;
         }
     }
 

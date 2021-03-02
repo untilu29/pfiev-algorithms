@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package NguaDiTuanIQ;
 
 import java.util.ArrayList;
@@ -10,19 +5,15 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
-/**
- *
- * @author MyPC
- */
 public class NguaDiTuan {
 
     int N = 10000; // Luong ca the
     int[] f = new int[N];
-     int[] a = {2, 1, -1, -2, -2, -1, 1, 2};
-     int[] b = {1, 2, 2, 1, -1, -2, -2, -1};
+    int[] a = {2, 1, -1, -2, -2, -1, 1, 2};
+    int[] b = {1, 2, 2, 1, -1, -2, -2, -1};
     List<int[][]> nghiem = new ArrayList(N);
     Random rnd;
-    
+
 
     public NguaDiTuan() {
         rnd = new Random();
@@ -43,7 +34,7 @@ public class NguaDiTuan {
     private void khoitao() {
         for (int i = 0; i < N; i++) {
             int[][] table = new int[4][4];
-           
+
 //        khoi tao vi tri ban dau cua ngua
             int x0, y0;
             do {
@@ -145,15 +136,15 @@ public class NguaDiTuan {
             }
         }
         //        In ra thu
-            int[][] table = nghiem.get(idxMin);
-            for (int j = 0; j < 4; j++) {
-                for (int k = 0; k < 4; k++) {
-                    System.out.print(table[j][k] + " ");
-                }
-                System.out.println("");
+        int[][] table = nghiem.get(idxMin);
+        for (int j = 0; j < 4; j++) {
+            for (int k = 0; k < 4; k++) {
+                System.out.print(table[j][k] + " ");
             }
             System.out.println("");
+        }
+        System.out.println("");
 
-        
+
     }
 }
